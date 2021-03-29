@@ -1,0 +1,228 @@
+:root{
+    --primary: rgb(8, 142, 231); 
+    --secondary-color: rgb(4, 65, 105);
+    --dark-color: rgb(1, 17, 27);
+    --light-color: rgb(205, 218, 231);
+}
+
+*{
+        margin: 0;
+       padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0.6em;
+}
+
+body{
+    line-height: 1.5em;
+}
+img{
+    width: 100%;
+}
+
+
+/*-----Navigation Styling-----*/
+
+.nav-bar{
+  justify-content: space-between;  
+ background-color: var(--primary);      
+            color: white;
+}
+
+
+
+.flex .logo{
+    max-width: 60px;
+}
+
+ul{
+    list-style-type: none;
+        align-items: center;
+            display: flex;
+              width: 50%;
+            
+}
+
+ul li a{
+   text-decoration: none;
+   margin: 1.2em;
+   padding: 0.3em;
+   color:  rgb(228, 235, 240);
+   transition: 0.3s;
+}
+
+.active,
+ul li a:hover{
+   text-decoration: none;
+   color: white;
+   border-bottom: white solid;
+}
+
+/*-----Showcase------*/
+
+.showcase{
+    background-color: var(--primary);
+    position: relative;
+    color: white;
+    height: 400px;
+}
+
+.showcase::before,
+.showcase::after{
+    content: '';
+    position: absolute;
+    height: 90px;
+    bottom: -75px;
+    right: 0;
+    left: 0;
+    transform: skewY(-2deg);
+    background-color: white;
+}
+
+.showcase-form{
+    position: relative;
+    top: 2.5em;
+    height: 400px;
+    width: 300px;
+    z-index: 100;
+}
+
+.showcase-form .form-control{
+    margin: 1.5em;
+}
+
+.showcase-form input[type="text"], 
+.showcase-form input[type="email"] {
+    font-size: 1.1em;
+    padding: 0.5em;
+    border: 0;
+    border-bottom: solid #333;
+    width: 100%;
+}
+
+.showcase-form input:focus {
+outline: none;
+}
+
+.showcase .grid{
+    grid-template-columns: 60%, 40%;
+    gap: 2.5em;
+    overflow: visible;
+}
+
+
+.showcase h1{
+font-size: 1.9em;
+}
+
+.showcase p{
+margin: 1.9em;
+}
+
+/*------Stats----*/
+
+.stats{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.grid-3>div{
+    padding: 1.5em;
+}
+
+
+
+.grid-3>div h3{
+    margin: 0.5em auto;
+    font-size: 2.2em;
+}
+
+.grid-3>div p{
+    margin: 0.5em auto;
+    font-size: 1.2em;
+}
+
+/* -----stats------ */
+
+.cli .grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid>*:first-child{
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+/* ------Cloud----- */
+
+.cloud{
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+}
+.lg{
+    font-size: 2.5em;
+    margin: .2em 0;
+    padding: .5em 0;
+    text-align: center;
+    line-height: 1em;
+}
+
+/* -----Languages---- */
+
+.languages {
+    text-align: center;
+}
+
+.languages h2{
+    margin: 1.5em;
+    font-size: 1.8em;
+}
+
+.languages .card{
+    margin: .9em;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.languages .card:hover{
+    transform: translateY(-5px);
+}
+
+
+/* -------Footer------ */
+
+.footer{
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.social a{
+    color: white;
+    margin: 0.5em;
+    transition: 0.2s;
+}
+
+.social a:hover{
+    color: rgb(190, 219, 238);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
